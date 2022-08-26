@@ -47,8 +47,7 @@ RUN docker-php-ext-install mysqli \
     && docker-php-ext-install zip \
     && docker-php-ext-install fileinfo \
     && docker-php-ext-install curl \
-    && docker-php-ext-install opcache \
-    && docker-php-ext-install openssl
+    && docker-php-ext-install opcache
 
 RUN docker-php-ext-configure imap \
     --with-kerberos \
