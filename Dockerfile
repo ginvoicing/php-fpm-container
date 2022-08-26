@@ -47,7 +47,8 @@ RUN docker-php-ext-install mysqli \
     && docker-php-ext-install zip \
     && docker-php-ext-install fileinfo \
     && docker-php-ext-install curl \
-    && docker-php-ext-install opcache
+    && docker-php-ext-install opcache \
+    && docker-php-ext-install openssl
 
 RUN docker-php-ext-configure imap \
     --with-kerberos \
@@ -63,4 +64,3 @@ RUN apt-get autoremove -y \
     && apt-get autoclean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
     && rm /bin/sh && ln -s /bin/bash /bin/sh
-
