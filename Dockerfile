@@ -32,7 +32,8 @@ RUN apt-get update && apt-get install -y \
     fonts-guru-extra \
     fonts-guru \
     libgmp-dev \
-    unzip
+    unzip \
+    python3
 
 
 RUN docker-php-ext-configure gd \
