@@ -1,4 +1,4 @@
-FROM php:8.2-fpm-bullseye
+FROM php:8.1-fpm-bullseye
 ENV DEBIAN_FRONTEND noninteractive
 LABEL maintainer="Tarun Jangra<tarun.jangra@hotmail.com>"
 
