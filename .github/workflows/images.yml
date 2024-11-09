@@ -21,13 +21,13 @@ jobs:
       - name: build alpine image
         run: |
           docker buildx build -f Dockerfile.alpine --push \
-          --tag ginvoicing/php:8.2-fpm-alpine  \
+          --tag ginvoicing/php:8.3-fpm-alpine  \
           --platform linux/amd64,linux/arm64 \
           .
       - name: build the image
         run: |
           export DOCKER_CLI_EXPERIMENTAL=enabled && \
           docker buildx build --push \
-          --tag ginvoicing/php:8.2-fpm \
+          --tag ginvoicing/php:8.3-fpm \
           --platform linux/amd64,linux/arm64 \
           .
