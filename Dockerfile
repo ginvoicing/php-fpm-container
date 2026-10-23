@@ -1,4 +1,5 @@
-FROM php:8.5-fpm-trixie
+ARG PHP_VERSION=8.5
+FROM php:${PHP_VERSION}-fpm-bookworm
 ENV DEBIAN_FRONTEND=noninteractive
 LABEL maintainer="Tarun Jangra<tarun.jangra@hotmail.com>"
 
